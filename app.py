@@ -1,7 +1,10 @@
+﻿"""Simple Flask todo application."""
+
 from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
+# In-memory todo list (resets on server restart)
 todos = []
 
 @app.route("/")
